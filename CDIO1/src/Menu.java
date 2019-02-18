@@ -9,7 +9,6 @@ public class Menu {
         System.out.println("-----------------------");
         System.out.println("1 Tilføj bruger");
         System.out.println("2 Se bruger");
-        System.out.println("3 Opdater bruger");
 
         System.out.print("Indtast valg: ");
         int menuItem = s.nextInt();
@@ -25,7 +24,6 @@ public class Menu {
                 dao.getUser(getUserDataID);
                 break;
             case 3:
-            case 4:
                 System.exit(0);
                 break;
             default:
