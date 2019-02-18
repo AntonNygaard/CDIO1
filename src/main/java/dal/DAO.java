@@ -11,7 +11,7 @@ public class DAO implements IUserDAO {
 
     @Override
     public void getUser(int userId) {
-        userdto.toString(userId);
+        System.out.println(userdto.toString(userId));
     }
 
     @Override

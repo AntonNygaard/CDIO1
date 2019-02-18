@@ -9,7 +9,6 @@ public class UserDTO implements Serializable{
 
 	private static final long serialVersionUID = 4545864587995944260L;
 	private List<String> roles;
-	//TODO Add relevant fields
 
 
 	public UserDTO() {
@@ -135,7 +134,7 @@ public class UserDTO implements Serializable{
         try (Connection connection = DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s170429?"
                 + "user=s170429&password=4PPt5j8rsEIUnrBq8G0iE")){
             Statement statement = connection.createStatement();
-            String getSQL_Password = String.format("SELECT password FROM users WHERE userid='%s'",userId);
+            String getSQL_Password = String.format("SELECT userPassword FROM users WHERE userid='%s'",userId);
             ResultSet SQL_Password = statement.executeQuery(getSQL_Password);
             while (SQL_Password.next()){
                 String get_Password = SQL_Password.getString("userPassword");
@@ -178,7 +177,7 @@ public class UserDTO implements Serializable{
 	}
 
 	public String toString(int userId) {
-		return "UserDTO [userId=" + getUserId(userId) + ", userName=" + getUserName(userId) + ", ini=" + getIni(userId) + "]";
+		return "UserDTO [userId=" + getUserId(userId) + ", userName=" + getUserName(userId) + ", ini=" + getIni(userId) + ", cpr=" + getCpr(userId) + ", password=" + getPassword(userId) + "]";
 	}
 
 	public void deleteUser(int userID) {

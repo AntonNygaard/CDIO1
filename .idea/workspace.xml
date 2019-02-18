@@ -1,36 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e63996f8-183b-41be-a3dc-dd6faf73c298" name="Default Changelist" comment="Fikset password create bug">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CDIO1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CDIO1.iml" afterDir="false" />
+    <list default="true" id="e63996f8-183b-41be-a3dc-dd6faf73c298" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/.idea/artifacts/CDIO1_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/artifacts/CDIO1_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/CDIO1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CDIO1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/UserDAODiscImplementation.jar" beforeDir="false" afterPath="$PROJECT_DIR$/UserDAODiscImplementation.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/src/dal/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dal/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/src/dal/IUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dal/IUserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/src/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/src/main/java/dal/DAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/src/main/java/dal/IUserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/src/main/java/dto/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO1/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dal/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dal/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/UserDTO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,30 +39,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="59" />
+          <entry key="java" value="61" />
           <entry key="sql" value="1" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="59" />
+          <entry key="JAVA" value="61" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3174" />
+          <entry key="java" value="4621" />
           <entry key="sql" value="15" />
-          <entry key="txt" value="112" />
+          <entry key="txt" value="199" />
           <entry key="xml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3174" />
-          <entry key="PLAIN_TEXT" value="112" />
+          <entry key="JAVA" value="4621" />
+          <entry key="PLAIN_TEXT" value="199" />
           <entry key="Scratch" value="15" />
           <entry key="XML" value="21" />
         </counts>
@@ -115,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="1105">
+              <caret line="68" column="33" lean-forward="true" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -136,8 +110,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dal/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+            <state relative-caret-position="170">
+              <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+              <folding>
+                <element signature="e#252#253#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#2972#2973#0" expanded="true" />
+                <element signature="e#2994#2995#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,8 +125,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dal/IUserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="102">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dto/UserDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="136" column="64" selection-start-line="136" selection-start-column="64" selection-end-line="136" selection-end-column="64" />
+              <folding>
+                <element signature="method#getUserId#0;class#UserDTO#0" />
+                <element signature="method#setUserId#0;class#UserDTO#0" />
+                <element signature="method#getUserName#0;class#UserDTO#0" />
+                <element signature="method#setUserName#0;class#UserDTO#0" />
+                <element signature="method#getIni#0;class#UserDTO#0" />
+                <element signature="method#setIni#0;class#UserDTO#0" />
+                <element signature="method#setPassword#0;class#UserDTO#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,10 +177,12 @@
         <option value="$PROJECT_DIR$/CDIO1/src/dto/UserDTO.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/CDIO1/src/dal/DAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dal/IUserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dal/IUserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dal/DAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dto/UserDTO.java" />
       </list>
     </option>
   </component>
@@ -239,7 +239,36 @@
               <item name="CDIO1" type="b2602c69:ProjectViewProjectNode" />
               <item name="CDIO1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CDIO1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CDIO1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CDIO1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CDIO1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CDIO1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CDIO1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CDIO1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CDIO1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CDIO1" type="b2602c69:ProjectViewProjectNode" />
@@ -261,7 +290,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550506741457" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550520392697" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -350,16 +379,30 @@
       <option name="project" value="LOCAL" />
       <updated>1550503469543</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Diverse">
+      <created>1550506778147</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1550506778147</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Tilføjet de sidste choices (updateUser og deleteUser) samt implementeret dem.">
+      <created>1550515707488</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1550515707488</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12699000" />
+    <option name="totallyTimeSpent" value="18073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" sideWeight="0.5010571" side_tool="true" weight="0.24966443" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -368,7 +411,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -386,7 +429,7 @@
       <window_info anchor="right" id="Database" order="5" weight="0.3295302" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.3295302" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3295302" />
     </layout>
     <layout-to-restore>
       <window_info id="Image Layers" order="0" />
@@ -429,7 +472,21 @@
     <MESSAGE value="Lavet database kommunikation i UserDTO" />
     <MESSAGE value="Fikset diverse" />
     <MESSAGE value="Fikset password create bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fikset password create bug" />
+    <MESSAGE value="Diverse" />
+    <MESSAGE value="Tilføjet de sidste choices (updateUser og deleteUser) samt implementeret dem." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tilføjet de sidste choices (updateUser og deleteUser) samt implementeret dem." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dto/UserDTO.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a3628747-7b18-4680-8861-6e1d3794274d/console.sql">
@@ -443,17 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding>
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CDIO1/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -461,20 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dal/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dal/IUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -494,8 +526,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="1105">
+          <caret line="68" column="33" lean-forward="true" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dal/IUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dal/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#2994#2995#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dto/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="136" column="64" selection-start-line="136" selection-start-column="64" selection-end-line="136" selection-end-column="64" />
+          <folding>
+            <element signature="method#getUserId#0;class#UserDTO#0" />
+            <element signature="method#setUserId#0;class#UserDTO#0" />
+            <element signature="method#getUserName#0;class#UserDTO#0" />
+            <element signature="method#setUserName#0;class#UserDTO#0" />
+            <element signature="method#getIni#0;class#UserDTO#0" />
+            <element signature="method#setIni#0;class#UserDTO#0" />
+            <element signature="method#setPassword#0;class#UserDTO#0" />
+          </folding>
         </state>
       </provider>
     </entry>
