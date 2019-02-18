@@ -159,10 +159,34 @@ public class UserDTO implements Serializable{
             e.printStackTrace();
         }
     }
-    public void getRoles() {
+    public String getRoles(int userId) {
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s170429?"
+                + "user=s170429&password=4PPt5j8rsEIUnrBq8G0iE")){
+            Statement statement = connection.createStatement();
+            String getSQL_Roles = String.format("SELECT roles FROM users WHERE userid='%s'",userId);
+            ResultSet SQL_Roles = statement.executeQuery(getSQL_Roles);
+            while (SQL_Roles.next()){
+                String get_Roles = SQL_Roles.getString("roles");
+                return get_Roles;
+            }
+
+        } catch (SQLException e) {
+            //Remember to handle Exceptions gracefully! Connection might be Lost....
+            e.printStackTrace();
+
+        }
+        return "Fejl";
 	}
-	public void setRoles(List<String> roles) {
-		this.roles = roles;
+	public void setRoles(String role, int userID) {
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s170429?"
+                + "user=s170429&password=4PPt5j8rsEIUnrBq8G0iE")) {
+            Statement statement = connection.createStatement();
+            String addSQL_Role = String.format("UPDATE users SET roles='%s' WHERE userid='%s';",role, userID);
+            statement.executeUpdate(addSQL_Role);
+        } catch (SQLException e) {
+            //Remember to handle Exceptions gracefully! Connection might be Lost....
+            e.printStackTrace();
+        }
 	}
 	public void addRole(String role){
 		this.roles.add(role);
@@ -177,7 +201,7 @@ public class UserDTO implements Serializable{
 	}
 
 	public String toString(int userId) {
-		return "UserDTO [userId=" + getUserId(userId) + ", userName=" + getUserName(userId) + ", ini=" + getIni(userId) + ", cpr=" + getCpr(userId) + ", password=" + getPassword(userId) + "]";
+		return "UserDTO [userId=" + getUserId(userId) + ", userName=" + getUserName(userId) + ", ini=" + getIni(userId) + ", cpr=" + getCpr(userId) + ", password=" + getPassword(userId) + ", rolle=" + getRoles(userId) + "]";
 	}
 
 	public void deleteUser(int userID) {

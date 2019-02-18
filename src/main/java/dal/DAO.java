@@ -66,6 +66,22 @@ public class DAO implements IUserDAO {
             }
         }
 
+        System.out.println("---------------------------------------------------");
+        System.out.println("Vælg hvilken rolle denne bruger skal have:");
+        System.out.println("1 Admin");
+        System.out.println("2 Pharmacist");
+        System.out.println("3 Foreman");
+        System.out.println("4 Operator");
+        int roleChoice = s.nextInt();
+        switch(roleChoice) {
+            case 1: userdto.setRoles("Admin", newUserId);
+            case 2: userdto.setRoles("Pharmacist", newUserId);
+            case 3: userdto.setRoles("Foreman", newUserId);
+            case 4: userdto.setRoles("Operator", newUserId);
+        }
+        System.out.println("Den nye bruger med id'et: " + newUserId + " er oprettet:");
+        getUser(newUserId);
+
 
     }
 
