@@ -56,7 +56,7 @@ public class DAO implements IUserDAO {
         // TODO: Lav random password generator:
         System.out.println("Indtast password:");
         String newPassword = "abc";
-        while(newPassword.length() < 6 || newPassword.length() > 50) {
+        while(newPassword.length() < 6 && newPassword.length() > 50) {
             newPassword = s.next();
             if (newPassword.length() < 6 && newPassword.length() > 50) {
                 System.out.println("Dit password skal være mellem 6 og 50 tegn, prøv igen");
