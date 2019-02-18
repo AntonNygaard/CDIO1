@@ -12,7 +12,8 @@ public class Menu {
         System.out.println("2 Se bruger");
         System.out.println("3 Rediger bruger");
         System.out.println("4 Slet bruger");
-        System.out.println("5 Exit program");
+        System.out.println("5 Se alle brugere");
+        System.out.println("6 Exit program");
 
         System.out.print("Indtast valg: ");
         int menuItem = s.nextInt();
@@ -34,6 +35,8 @@ public class Menu {
                 deleteUser();
                 break;
             case 5:
+                dao.seeAllUsers();
+            case 6:
                 System.exit(0);
                 break;
             default:

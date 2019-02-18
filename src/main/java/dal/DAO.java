@@ -96,4 +96,7 @@ public class DAO implements IUserDAO {
     public void deleteUser(int userId) {
         userdto.deleteUser(userId);
     }
+    public void seeAllUsers() {
+        userdto.seeAllUsers();
+    }
 }

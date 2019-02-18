@@ -192,6 +192,20 @@ public class UserDTO implements Serializable{
         }
     }
 
+    public void seeAllUsers() {
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s170429?"
+                + "user=s170429&password=4PPt5j8rsEIUnrBq8G0iE")) {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM users");
+            while (resultSet.next()){
+                System.out.println(resultSet.getString(1) + ": " + resultSet.getString(2) + ", " + resultSet.getString(3) + ", " + resultSet.getString(4) + ", " + resultSet.getString(5));
+            }
+        } catch (SQLException e) {
+            //Remember to handle Exceptions gracefully! Connection might be Lost....
+            e.printStackTrace();
+        }
+    }
+
 
 
 }
