@@ -69,13 +69,31 @@ public class DAO implements IUserDAO {
 
     }
 
-    @Override
-    public void updateUser(UserDTO user) throws DALException {
+    public void updateUser(int updateChoice,int userid) {
+        switch (updateChoice) {
+            case 1:
+                System.out.println("Indtast dit ønskede username:");
+                String newUserName = s.next();
+                userdto.setUserName(userid, newUserName);
+            case 2:
+                System.out.println("Indtast dine ønskede initialer:");
+                String newIni = s.next();
+                userdto.setIni(userid,newIni);
+            case 3:
+                System.out.println("Indtast dit ønskede cpr nummer:");
+                String newCPR = s.next();
+                userdto.setCpr(userid,newCPR);
+            case 4:
+                System.out.println("Indtast dit ønskede password:");
+                String newPassword = s.next();
+                userdto.setPassword(userid,newPassword);
+            default:
+        }
 
     }
 
     @Override
-    public void deleteUser(int userId) throws DALException {
-
+    public void deleteUser(int userId) {
+        userdto.deleteUser(userId);
     }
 }

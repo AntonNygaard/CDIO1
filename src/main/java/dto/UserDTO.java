@@ -181,6 +181,18 @@ public class UserDTO implements Serializable{
 		return "UserDTO [userId=" + getUserId(userId) + ", userName=" + getUserName(userId) + ", ini=" + getIni(userId) + "]";
 	}
 
+	public void deleteUser(int userID) {
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s170429?"
+                + "user=s170429&password=4PPt5j8rsEIUnrBq8G0iE")) {
+            Statement statement = connection.createStatement();
+            String deleteSQL_user = String.format("DELETE FROM users WHERE userid='%s'",userID);
+            statement.executeUpdate(deleteSQL_user);
+        } catch (SQLException e) {
+            //Remember to handle Exceptions gracefully! Connection might be Lost....
+            e.printStackTrace();
+        }
+    }
+
 
 
 }
