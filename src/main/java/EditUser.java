@@ -174,8 +174,28 @@ public class EditUser {
         return user;
     }
     public UserDTO setUsername(UserDTO user) {
-        System.out.println("Indtast ønskede username:");
-        user.setUserName(s.next());
+        System.out.println("Indtast ønskede username (Mellem 4 og 20 tegn, kun bogstaver og tal)):");
+        String newUserUsername;
+        while (true) {
+            newUserUsername = s.next();
+            char newUserUsernameCheck;
+            if (newUserUsername.length()>=4 && newUserUsername.length()<=20) {
+                for (int j = 0; j < newUserUsername.length(); j++) {
+                    newUserUsernameCheck = newUserUsername.charAt(j);
+                    if (Character.isDigit(newUserUsernameCheck) || Character.isLetter(newUserUsernameCheck)) {
+                        continue;
+                    } else {
+                        System.out.println("Dit username må kun indeholde tal og bogstaver!");
+                        setUsername(user);
+                    }
+                }
+                break;
+            }
+            else {
+                System.out.println("Indtast venligst et username mellem 4 og 20 tegn");
+            }
+        }
+        user.setUserName(newUserUsername);
         return user;
     }
     public UserDTO setIni(UserDTO user) {
