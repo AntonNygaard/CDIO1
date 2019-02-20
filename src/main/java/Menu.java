@@ -1,11 +1,8 @@
-import dal.DAO;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Menu {
-    DAO dao = new DAO();
     Scanner s = new Scanner(System.in);
+    EditUser editUser = new EditUser();
     public void showMenu() {
         System.out.println("-----------------------");
         System.out.println("1 Tilføj bruger");
@@ -21,55 +18,25 @@ public class Menu {
 
         switch (menuItem) {
             case 1:
-                dao.createUser();
+                editUser.createUser();
                 break;
             case 2:
-                System.out.println("Indtast id på brugeren du vil se:");
-                int getUserDataID = s.nextInt();
-                dao.getUser(getUserDataID);
+                editUser.accessUser_input();
                 break;
             case 3:
-                editUser();
+                editUser.updateUser();
                 break;
             case 4:
-                deleteUser();
+                editUser.deleteUser();
                 break;
             case 5:
-                dao.seeAllUsers();
+                editUser.printAllUsers();
+                break;
             case 6:
                 System.exit(0);
                 break;
             default:
                 showMenu();
         }
-    }
-
-    public void editUser() {
-        System.out.println("-----------------------");
-        System.out.println("1 Skift username");
-        System.out.println("2 Skift initialer");
-        System.out.println("3 Skift cpr");
-        System.out.println("4 Skift password");
-
-        System.out.println("Indtast valg:");
-        int changeChoice = s.nextInt();
-        System.out.println("Indtast userID:");
-        int userID = s.nextInt();
-        System.out.println("\n");
-
-        switch(changeChoice) {
-            case 1: dao.updateUser(1,userID);
-            case 2: dao.updateUser(2,userID);
-            case 3: dao.updateUser(3,userID);
-            case 4: dao.updateUser(4,userID);
-            default: showMenu();
-        }
-
-    }
-
-    public void deleteUser() {
-        System.out.println("Indtast userID på den bruger der ønskes slettet:");
-        int userID = s.nextInt();
-        dao.deleteUser(userID);
     }
 }

@@ -2,117 +2,127 @@ package dal;
 
 import dto.UserDTO;
 
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class DAO implements IUserDAO {
-    UserDTO userdto = new UserDTO();
-    Scanner s = new Scanner(System.in);
 
     @Override
-    public void getUser(int userId) {
-        System.out.println(userdto.toString(userId));
+    public UserDTO getUser(int userId) throws DALException {
+        UserDTO userdto = new UserDTO();
+        String getUserSQL = String.format("SELECT * FROM users WHERE userid='%s'",userId);
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s170429?"
+                + "user=s170429&password=4PPt5j8rsEIUnrBq8G0iE")) {
+            Statement statement = connection.createStatement();
+            ResultSet getUser = statement.executeQuery(getUserSQL);
+            while (getUser.next()){
+                userdto.setUserName(getUser.getString("userName"));
+                userdto.setUserId(getUser.getInt("userid"));
+                userdto.setIni(getUser.getString("ini"));
+                userdto.setCpr(getUser.getString("cpr"));
+                userdto.setPassword(getUser.getString("userPassword"));
+            }
+        } catch (SQLException e) {
+            //Remember to handle Exceptions gracefully! Connection might be Lost....
+            e.printStackTrace();
+        }
+        return userdto;
     }
-
     @Override
-    public List<UserDTO> getUserList() {
-        return null;
+    public List<UserDTO> getUserList() throws DALException {
+        ArrayList userList = new ArrayList();
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s170429?"
+                + "user=s170429&password=4PPt5j8rsEIUnrBq8G0iE")) {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM users");
+            while (resultSet.next()){
+                userList.add("UserID: " +resultSet.getString(1) + ", Navn: " + resultSet.getString(2) + ", Initialer: " + resultSet.getString(3) + ", CPR: " + resultSet.getString(4) + ", Password: " + resultSet.getString(5));
+            }
+        } catch (SQLException e) {
+            //Remember to handle Exceptions gracefully! Connection might be Lost....
+            e.printStackTrace();
+        }
+        return userList;
     }
-
     @Override
-    public void createUser() {
-        System.out.println("Indtast userID:");
-        int newUserId = s.nextInt();
-        userdto.setUserId(newUserId);
-
-        System.out.println("Indtast username:");
-        String newUserName = s.next();
-        userdto.setUserName(newUserId,newUserName);
-
-        System.out.println("Indtast initialer:");
-        String newIni = "abcdefg";
-        while(newIni.length() > 4 || newIni.length() < 1) {
-            newIni = s.next();
-            if (newIni.length() > 4 && newIni.length() < 1) {
-                System.out.println("Dine initialer skal være mellem 1 og 4 tegn, prøv igen");
-            }
-            else {
-                userdto.setIni(newUserId,newIni);
-            }
+    public void createUser(UserDTO user) throws DALException {
+        String createUserSQL = String.format(
+                "INSERT INTO users VALUES ('%s','%s','%s','%s','%s','%s');",
+                user.getUserId(),user.getUserName(),user.getIni(),user.getCpr(),user.getPassword(),user.getRole());
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s170429?"
+                + "user=s170429&password=4PPt5j8rsEIUnrBq8G0iE")) {
+            Statement statement = connection.createStatement();
+            statement.executeUpdate(createUserSQL);
+            System.out.println("------------------------------------------------\n" +
+                    "Bruger lavet\n" +
+                    "------------------------------------------------");
+        } catch (SQLException e) {
+            //Remember to handle Exceptions gracefully! Connection might be Lost...
+            System.out.println("------------------------------------------------\n" +
+                    "FEJL: UserID allerede taget\n" +
+                    "------------------------------------------------");
         }
-
-        System.out.println("Indtast dit cpr nummer");
-        String newCpr = "a";
-        while (newCpr.length() != 10) {
-            newCpr = s.next();
-            if (newCpr.length() != 10) {
-                System.out.println("Et cpr nummer er 10 tegn langt, prøv igen");
-            }
-            else {
-                userdto.setCpr(newUserId,newCpr);
-            }
-        }
-
-        // TODO: Lav random password generator:
-        System.out.println("Indtast password:");
-        String newPassword = "abc";
-        while(newPassword.length() < 6 || newPassword.length() > 50) {
-            newPassword = s.next();
-            if (newPassword.length() < 6 && newPassword.length() > 50) {
-                System.out.println("Dit password skal være mellem 6 og 50 tegn, prøv igen");
-            }
-            else {
-                userdto.setPassword(newUserId,newPassword);
-            }
-        }
-
-        System.out.println("---------------------------------------------------");
-        System.out.println("Vælg hvilken rolle denne bruger skal have:");
-        System.out.println("1 Admin");
-        System.out.println("2 Pharmacist");
-        System.out.println("3 Foreman");
-        System.out.println("4 Operator");
-        int roleChoice = s.nextInt();
-        switch(roleChoice) {
-            case 1: userdto.setRoles("Admin", newUserId);
-            case 2: userdto.setRoles("Pharmacist", newUserId);
-            case 3: userdto.setRoles("Foreman", newUserId);
-            case 4: userdto.setRoles("Operator", newUserId);
-        }
-        System.out.println("Den nye bruger med id'et: " + newUserId + " er oprettet:");
-        getUser(newUserId);
-
-
     }
-
-    public void updateUser(int updateChoice,int userid) {
-        switch (updateChoice) {
-            case 1:
-                System.out.println("Indtast dit ønskede username:");
-                String newUserName = s.next();
-                userdto.setUserName(userid, newUserName);
-            case 2:
-                System.out.println("Indtast dine ønskede initialer:");
-                String newIni = s.next();
-                userdto.setIni(userid,newIni);
-            case 3:
-                System.out.println("Indtast dit ønskede cpr nummer:");
-                String newCPR = s.next();
-                userdto.setCpr(userid,newCPR);
-            case 4:
-                System.out.println("Indtast dit ønskede password:");
-                String newPassword = s.next();
-                userdto.setPassword(userid,newPassword);
-            default:
-        }
-
-    }
-
     @Override
-    public void deleteUser(int userId) {
-        userdto.deleteUser(userId);
+    public void updateUser(UserDTO user) throws DALException {
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s170429?"
+                + "user=s170429&password=4PPt5j8rsEIUnrBq8G0iE")) {
+            String column = "";
+            String choice = "";
+            if (user.getUserName()!= null) {
+                column = "userName";
+                choice = user.getUserName();
+            }
+            else if (user.getIni()!= null) {
+                column = "ini";
+                choice = user.getIni();
+            }
+            else if (user.getCpr()!= null) {
+                column = "cpr";
+                choice = user.getIni();
+            }
+            else if (user.getPassword()!= null) {
+                column = "userPassword";
+                choice = user.getPassword();
+            }
+            else if (user.getRole() != null) {
+                column = "rolle";
+                choice = user.getRole();
+            }
+            Statement statement = connection.createStatement();
+            String update_user = String.format("UPDATE users SET %s='%s' WHERE userid='%s';",column,choice,user.getUserId());
+            statement.executeUpdate(update_user);
+        } catch (SQLException e) {
+            //Remember to handle Exceptions gracefully! Connection might be Lost....
+            e.printStackTrace();
+        }
     }
-    public void seeAllUsers() {
-        userdto.seeAllUsers();
+    @Override
+    public void deleteUser(int userId) throws DALException {
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s170429?"
+                + "user=s170429&password=4PPt5j8rsEIUnrBq8G0iE")) {
+            Statement statement = connection.createStatement();
+            String SQL_String = String.format("DELETE FROM users WHERE userid='%s'",userId);
+            statement.executeUpdate(SQL_String);
+        } catch (SQLException e) {
+            //Remember to handle Exceptions gracefully! Connection might be Lost....
+            e.printStackTrace();
+        }
+    }
+    public List getRolesList() {
+        ArrayList<String> roleList = new ArrayList();
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://ec2-52-30-211-3.eu-west-1.compute.amazonaws.com/s170429?"
+                + "user=s170429&password=4PPt5j8rsEIUnrBq8G0iE")) {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT userrole FROM roles");
+            while (resultSet.next()){
+                roleList.add(resultSet.getString(1));
+            }
+        } catch (SQLException e) {
+            //Remember to handle Exceptions gracefully! Connection might be Lost....
+            e.printStackTrace();
+        }
+        return roleList;
     }
 }
