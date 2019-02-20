@@ -5,18 +5,29 @@ public class Menu {
     EditUser editUser = new EditUser();
     public void showMenu() {
         System.out.println("-----------------------");
-        System.out.println("1 Tilføj bruger");
-        System.out.println("2 Se bruger");
-        System.out.println("3 Rediger bruger");
-        System.out.println("4 Slet bruger");
-        System.out.println("5 Se alle brugere");
-        System.out.println("6 Exit program");
+        System.out.println("Tast 1 for at tilføje en bruger");
+        System.out.println("Tast 2 for at se en bruger");
+        System.out.println("Tast 3 for at redigere en bruger");
+        System.out.println("Tast 4 for at slette en bruger");
+        System.out.println("Tast 5 for at see alle brugere");
+        System.out.println("Tast 6 for at gå ud af programmet");
 
         System.out.print("Indtast valg: ");
-        int menuItem = s.nextInt();
+        String menuItem;
+        int menuItemFinal;
+        while (true) {
+            menuItem = s.next();
+            if (editUser.isThisAnInt(menuItem)) {
+                menuItemFinal = Integer.parseInt(menuItem);
+                if (menuItemFinal >= 1 && menuItemFinal <= 6) {
+                    break;
+                }
+            }
+            System.out.println(menuItem + " er ikke en mulighed. Indtast venligst et tal mellem 1 og 6.");
+        }
         System.out.print("\n");
 
-        switch (menuItem) {
+        switch (menuItemFinal) {
             case 1:
                 editUser.createUser();
                 break;

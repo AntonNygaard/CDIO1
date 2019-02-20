@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e63996f8-183b-41be-a3dc-dd6faf73c298" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EditUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EditUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,30 +38,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="67" />
+          <entry key="java" value="69" />
           <entry key="sql" value="1" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="67" />
+          <entry key="JAVA" value="69" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5876" />
+          <entry key="java" value="6280" />
           <entry key="sql" value="15" />
-          <entry key="txt" value="418" />
+          <entry key="txt" value="544" />
           <entry key="xml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5876" />
-          <entry key="PLAIN_TEXT" value="418" />
+          <entry key="JAVA" value="6280" />
+          <entry key="PLAIN_TEXT" value="544" />
           <entry key="Scratch" value="15" />
           <entry key="XML" value="21" />
         </counts>
@@ -124,19 +124,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/IUserDAOS133967.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainS133967.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2298">
-              <caret line="390" column="26" lean-forward="true" selection-start-line="390" selection-start-column="26" selection-end-line="390" selection-end-column="26" />
+            <state relative-caret-position="-8701">
+              <caret line="103" column="38" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -144,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/UserDAOImplS133967.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1326">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="-7021">
+              <caret line="129" column="28" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,23 +158,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-              <folding>
-                <element signature="method#showMenu#0;class#Menu#0" />
-              </folding>
+            <state relative-caret-position="243">
+              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/EditUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="192" column="13" lean-forward="true" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="13" />
+            <state relative-caret-position="309">
+              <caret line="256" column="9" lean-forward="true" selection-start-line="256" selection-start-column="9" selection-end-line="256" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#deleteUser#0;class#EditUser#0" />
@@ -192,21 +180,12 @@
                 <element signature="method#updateUser#0;class#EditUser#0" />
                 <element signature="method#printAllUsers#0;class#EditUser#0" />
                 <element signature="method#setPassword#0;class#EditUser#0" />
-                <element signature="method#setID#0;class#EditUser#0" />
+                <element signature="method#setUsername#0;class#EditUser#0" />
+                <element signature="method#setIni#0;class#EditUser#0" />
                 <element signature="method#setCpr#0;class#EditUser#0" />
                 <element signature="method#setRole#0;class#EditUser#0" />
-                <element signature="method#isThisAnInt#0;class#EditUser#0" />
                 <element signature="method#isThisAString#0;class#EditUser#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/UserDTOS133967.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -246,8 +225,8 @@
         <option value="$PROJECT_DIR$/src/main/java/dal/IUserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/dal/DAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/dto/UserDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Menu.java" />
         <option value="$PROJECT_DIR$/src/main/java/EditUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Menu.java" />
       </list>
     </option>
   </component>
@@ -355,7 +334,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550700798413" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550701795702" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -511,7 +490,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="CDIO1" />
@@ -519,10 +498,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainS133967" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainS133967" />
+      <module name="CDIO1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.MainS133967" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MainS133967" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
@@ -605,11 +595,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550699638198</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Tilføjet krav til username (i EditUser) om at det skal være mellem 4 og 20 tegn, samt kun bestå af bogstaver og tal.">
+      <created>1550700831185</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1550700831185</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23578000" />
+    <option name="totallyTimeSpent" value="24477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -624,7 +621,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -633,7 +630,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013423" side_tool="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4986577" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" sideWeight="0.4986577" visible="true" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -695,7 +692,20 @@
     <MESSAGE value="Tilføjet valg: &quot;Se alle brugere&quot;" />
     <MESSAGE value="- det er min løsning, læg mærke til at der mangler password og cpr, jeg har overset dem, men det kan fikses, der er kun 2 lag her så vi skal nok lave det om til 3 lag, det er et krav kan jeg se fra CDIO1" />
     <MESSAGE value="Ritig mange ændringer. Har stort set lavet hele programmet om, rykket filer rundt så de passer, sat menu ordentligt op, lavet en ordentlig EditUser klasse osv." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ritig mange ændringer. Har stort set lavet hele programmet om, rykket filer rundt så de passer, sat menu ordentligt op, lavet en ordentlig EditUser klasse osv." />
+    <MESSAGE value="Tilføjet krav til username (i EditUser) om at det skal være mellem 4 og 20 tegn, samt kun bestå af bogstaver og tal." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tilføjet krav til username (i EditUser) om at det skal være mellem 4 og 20 tegn, samt kun bestå af bogstaver og tal." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Menu.java</url>
+          <line>6</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CDIO1/src/Menu.java" />
@@ -725,39 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dal/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getUser#0;class#UserDAOimpls170429#0" />
-            <element signature="method#getUserList#0;class#UserDAOimpls170429#0" />
-            <element signature="method#createUser#0;class#UserDAOimpls170429#0" />
-            <element signature="method#updateUser#0;class#UserDAOimpls170429#0" />
-            <element signature="method#deleteUser#0;class#UserDAOimpls170429#0" />
-            <element signature="method#getRolesList#0;class#UserDAOimpls170429#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IUserDAOS133967.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UserDAOImplS133967.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1326">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -798,10 +775,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MainS133967.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/IUserDAOS133967.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2298">
-          <caret line="390" column="26" lean-forward="true" selection-start-line="390" selection-start-column="26" selection-end-line="390" selection-end-column="26" />
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dal/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getUser#0;class#UserDAOimpls170429#0" />
+            <element signature="method#getUserList#0;class#UserDAOimpls170429#0" />
+            <element signature="method#createUser#0;class#UserDAOimpls170429#0" />
+            <element signature="method#updateUser#0;class#UserDAOimpls170429#0" />
+            <element signature="method#deleteUser#0;class#UserDAOimpls170429#0" />
+            <element signature="method#getRolesList#0;class#UserDAOimpls170429#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -812,20 +805,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Menu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainS133967.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        <state relative-caret-position="-8701">
+          <caret line="103" column="38" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UserDAOImplS133967.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7021">
+          <caret line="129" column="28" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
           <folding>
-            <element signature="method#showMenu#0;class#Menu#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EditUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="192" column="13" lean-forward="true" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="13" />
+        <state relative-caret-position="309">
+          <caret line="256" column="9" lean-forward="true" selection-start-line="256" selection-start-column="9" selection-end-line="256" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#deleteUser#0;class#EditUser#0" />
@@ -834,12 +834,19 @@
             <element signature="method#updateUser#0;class#EditUser#0" />
             <element signature="method#printAllUsers#0;class#EditUser#0" />
             <element signature="method#setPassword#0;class#EditUser#0" />
-            <element signature="method#setID#0;class#EditUser#0" />
+            <element signature="method#setUsername#0;class#EditUser#0" />
+            <element signature="method#setIni#0;class#EditUser#0" />
             <element signature="method#setCpr#0;class#EditUser#0" />
             <element signature="method#setRole#0;class#EditUser#0" />
-            <element signature="method#isThisAnInt#0;class#EditUser#0" />
             <element signature="method#isThisAString#0;class#EditUser#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
         </state>
       </provider>
     </entry>
