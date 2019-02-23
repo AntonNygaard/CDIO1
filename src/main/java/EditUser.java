@@ -1,6 +1,5 @@
 import dal.DAO;
 import dal.IUserDAO;
-import dal.DAO;
 import dto.UserDTO;
 
 import java.util.List;
@@ -11,7 +10,18 @@ public class EditUser {
     Scanner s = new Scanner(System.in);
 
     public void deleteUser() {
-        System.out.println("Indtast id på den bruger du ønsker slettet:");
+        String deleteUserViaInt;
+        int deleteUserViaIntFinal;
+        while (true) {
+            System.out.println("Indtast id på den bruger du ønsker slettet:");
+            deleteUserViaInt = s.next();
+            if (isThisAnInt(deleteUserViaInt)) {
+                deleteUserViaIntFinal = Integer.parseInt(deleteUserViaInt);
+                if (isThisWithinBorder(deleteUserViaIntFinal,11,99)) {
+                    break;
+                }
+            }
+        }
         try {
             UserDTO deleteUser = UserDAO.getUser(s.nextInt());
             UserDAO.deleteUser(deleteUser.getUserId());
@@ -36,10 +46,21 @@ public class EditUser {
             System.out.println("Error");
         }
     }
-    public void accessUser_input() {
-        System.out.println("Indtast userID på den bruger du gerne vil finde information om:");
+    public void accessUser() {
+        String accessUserViaInt;
+        int accessUserViaIntFinal;
+        while (true) {
+            System.out.println("Indtast id på den bruger du ønsker at se information om:");
+            accessUserViaInt = s.next();
+            if (isThisAnInt(accessUserViaInt)) {
+                accessUserViaIntFinal = Integer.parseInt(accessUserViaInt);
+                if (isThisWithinBorder(accessUserViaIntFinal,11,99)) {
+                    break;
+                }
+            }
+        }
         try {
-            UserDTO getUser = UserDAO.getUser(s.nextInt());
+            UserDTO getUser = UserDAO.getUser(accessUserViaIntFinal);
             System.out.println(getUser.toString());
         }
         catch (IUserDAO.DALException e) {
@@ -56,24 +77,17 @@ public class EditUser {
         System.out.println("3 Skift cpr");
         System.out.println("4 Skift password");
         System.out.println("5 Skift rolle");
-
         System.out.println("Indtast valg:");
+
         String choice;
         int intChoice;
         while (true) {
             choice = s.next();
             if (isThisAnInt(choice)) {
                 intChoice = Integer.parseInt(choice);
-                if (intChoice > 0 && intChoice < 6) {
-                    int correctStringCheck = intChoice;
+                if (isThisWithinBorder(intChoice,1,5)) {
                     break;
                 }
-                else {
-                    System.out.println("Værdien du indtastede er ikke et gyldigt valg, prøv igen");
-                }
-            }
-            else {
-                System.out.println("Indtast venligst en integer værdi");
             }
         }
         switch (intChoice) {
@@ -235,16 +249,19 @@ public class EditUser {
         for (int i=0; i<roleList.size(); i++) {
             System.out.println((i+1) + " " + roleList.get(i));
         }
-        int choice = -100;
-        while(choice >= roleList.size() || choice < 1) {
-            choice = s.nextInt();
-            if (choice > roleList.size()|| choice < 0 ) {
-                System.out.println("Vælg venligst et tal mellem 1 og " + roleList.size());
+        String choice;
+        int intChoice;
+        while(true) {
+            choice = s.next();
+            if (isThisAnInt(choice)) {
+                intChoice = Integer.parseInt(choice);
+                if (isThisWithinBorder(intChoice,0,roleList.size()-1)) break;
             }
         }
-        user.setRole(roleList.get(choice-1));
+        user.setRole(roleList.get(intChoice-1));
         return user;
     }
+
     // Fundet online
     public boolean isThisAnInt(String s) {
         try
@@ -253,6 +270,8 @@ public class EditUser {
             return true;
         } catch (NumberFormatException ex)
         {
+            System.out.println("Dette er ikke en interger værdi\n" +
+                    "-------------------------------------------------------------------------");
             return false;
         }
     }
@@ -267,5 +286,16 @@ public class EditUser {
         }
 
         return true;
+    }
+
+    public boolean isThisWithinBorder(int value, int minValue, int maxValue) {
+        if (value >= minValue && value <= maxValue) {
+            return true;
+        }
+        else {
+            System.out.println("Indtastede værdi er udenfor forventede spektrum\n" +
+                    "-------------------------------------------------------------------------");
+            return false;
+        }
     }
 }

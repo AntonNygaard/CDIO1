@@ -32,7 +32,7 @@ public class Menu {
                 editUser.createUser();
                 break;
             case 2:
-                editUser.accessUser_input();
+                editUser.accessUser();
                 break;
             case 3:
                 editUser.updateUser();

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e63996f8-183b-41be-a3dc-dd6faf73c298" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/DBTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dal/temp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EditUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EditUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dal/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dal/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserDAOImplS133967Test.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,30 +42,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="70" />
+          <entry key="java" value="75" />
           <entry key="sql" value="1" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="70" />
+          <entry key="JAVA" value="75" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6333" />
+          <entry key="java" value="7548" />
           <entry key="sql" value="15" />
-          <entry key="txt" value="621" />
+          <entry key="txt" value="660" />
           <entry key="xml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6333" />
-          <entry key="PLAIN_TEXT" value="621" />
+          <entry key="JAVA" value="7548" />
+          <entry key="PLAIN_TEXT" value="660" />
           <entry key="Scratch" value="15" />
           <entry key="XML" value="21" />
         </counts>
@@ -106,35 +110,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dal/DAO.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DBTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="136">
+              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getUser#0;class#DAO#0" />
-                <element signature="method#getUserList#0;class#DAO#0" />
-                <element signature="method#createUser#0;class#DAO#0" />
-                <element signature="method#updateUser#0;class#DAO#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/IUserDAOS133967.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dal/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MainS133967.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="51" column="49" lean-forward="true" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+            <state relative-caret-position="340">
+              <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getUserList#0;class#DAO#0" />
+                <element signature="method#createUser#0;class#DAO#0" />
+                <element signature="method#updateUser#0;class#DAO#0" />
+                <element signature="method#deleteUser#0;class#DAO#0" />
+                <element signature="method#getRolesList#0;class#DAO#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,8 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dto/UserDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+            <state relative-caret-position="136">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#removeRole#0;class#UserDTO#0" />
@@ -156,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+            <state relative-caret-position="198">
+              <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -165,21 +164,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/EditUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+            <state relative-caret-position="-25">
+              <caret line="254" column="30" lean-forward="true" selection-start-line="254" selection-start-column="30" selection-end-line="254" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#deleteUser#0;class#EditUser#0" />
                 <element signature="method#createUser#0;class#EditUser#0" />
-                <element signature="method#accessUser_input#0;class#EditUser#0" />
-                <element signature="method#updateUser#0;class#EditUser#0" />
+                <element signature="method#accessUser#0;class#EditUser#0" />
                 <element signature="method#printAllUsers#0;class#EditUser#0" />
+                <element signature="method#setPassword#0;class#EditUser#0" />
                 <element signature="method#setID#0;class#EditUser#0" />
                 <element signature="method#setUsername#0;class#EditUser#0" />
                 <element signature="method#setIni#0;class#EditUser#0" />
                 <element signature="method#setCpr#0;class#EditUser#0" />
-                <element signature="method#setRole#0;class#EditUser#0" />
-                <element signature="method#isThisAnInt#0;class#EditUser#0" />
                 <element signature="method#isThisAString#0;class#EditUser#0" />
               </folding>
             </state>
@@ -217,12 +214,16 @@
         <option value="$PROJECT_DIR$/src/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/Menu.java" />
         <option value="$PROJECT_DIR$/src/main/java/UserDAOImplS133967.java" />
-        <option value="$PROJECT_DIR$/src/test/java/UserDAOImplS133967Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/dal/IUserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dal/DAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/dto/UserDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/EditUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MainS133967.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UserDTOS133967.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/DBTester.java" />
+        <option value="$PROJECT_DIR$/src/test/java/UserDAOImplS133967Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DBTester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dal/DAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/EditUser.java" />
       </list>
     </option>
   </component>
@@ -312,6 +313,13 @@
             </path>
             <path>
               <item name="CDIO1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CDIO1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CDIO1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -331,7 +339,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550875695890" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550921059733" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -340,19 +348,19 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\CDIO1" />
-      <recent name="D:\Projects\CDIO1\.idea\libraries" />
-      <recent name="D:\Projects\CDIO1\CDIO1\src\main\java" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\Software Semester 2\02324 Videregaende programmering\projects\CDIO1\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\CDIO1" />
+      <recent name="D:\Projects\CDIO1\.idea\libraries" />
+      <recent name="D:\Projects\CDIO1\CDIO1\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -368,6 +376,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
+    <configuration name="DBTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.DBTester" />
+      <module name="CDIO1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="CDIO1" />
@@ -385,12 +406,13 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.MainS133967" />
+      <item itemvalue="Application.DBTester" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DBTester" />
         <item itemvalue="Application.MainS133967" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -408,7 +430,7 @@
       <updated>1550491847365</updated>
       <workItem from="1550491849206" duration="11675000" />
       <workItem from="1550504113287" duration="513000" />
-      <workItem from="1550739229816" duration="5826000" />
+      <workItem from="1550739229816" duration="10307000" />
     </task>
     <task id="LOCAL-00001" summary="Lavet database kommunikation i UserDTO">
       <created>1550495437790</created>
@@ -487,16 +509,24 @@
       <option name="project" value="LOCAL" />
       <updated>1550701835194</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Slettede klasser der ikke blev brugt">
+      <created>1550875711356</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1550875711356</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30635000" />
+    <option name="totallyTimeSpent" value="35116000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" sideWeight="0.5010571" side_tool="true" weight="0.24966443" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -505,7 +535,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -528,7 +558,7 @@
       <window_info anchor="right" id="REPL" order="10" side_tool="true" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989429" weight="0.25302014" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" sideWeight="0.5010571" side_tool="true" weight="0.24966443" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -537,7 +567,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -578,7 +608,20 @@
     <MESSAGE value="Ritig mange ændringer. Har stort set lavet hele programmet om, rykket filer rundt så de passer, sat menu ordentligt op, lavet en ordentlig EditUser klasse osv." />
     <MESSAGE value="Tilføjet krav til username (i EditUser) om at det skal være mellem 4 og 20 tegn, samt kun bestå af bogstaver og tal." />
     <MESSAGE value="Lavet et check i &quot;Menu&quot; for at sikre at user input er en int mellem 1 og 6." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lavet et check i &quot;Menu&quot; for at sikre at user input er en int mellem 1 og 6." />
+    <MESSAGE value="Slettede klasser der ikke blev brugt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Slettede klasser der ikke blev brugt" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dal/DAO.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CDIO1/src/Menu.java" />
@@ -597,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/UserDAOImplS133967Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dal/temp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -611,10 +647,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UserDTOS133967.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainS133967.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-238">
+          <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/IUserDAOS133967.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UserDAOImplS133967.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="129" column="28" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UserDTOS133967.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/UserDAOImplS133967Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/DBTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DBTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dto/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#removeRole#0;class#UserDTO#0" />
+            <element signature="method#toString#0;class#UserDTO#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -625,27 +721,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MainS133967.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dal/DAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="51" column="49" lean-forward="true" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UserDAOImplS133967.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1445">
-          <caret line="129" column="28" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
+        <state relative-caret-position="340">
+          <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getUserList#0;class#DAO#0" />
+            <element signature="method#createUser#0;class#DAO#0" />
+            <element signature="method#updateUser#0;class#DAO#0" />
+            <element signature="method#deleteUser#0;class#DAO#0" />
+            <element signature="method#getRolesList#0;class#DAO#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IUserDAOS133967.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="198">
+          <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -664,56 +758,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dal/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getUser#0;class#DAO#0" />
-            <element signature="method#getUserList#0;class#DAO#0" />
-            <element signature="method#createUser#0;class#DAO#0" />
-            <element signature="method#updateUser#0;class#DAO#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#removeRole#0;class#UserDTO#0" />
-            <element signature="method#toString#0;class#UserDTO#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EditUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+        <state relative-caret-position="-25">
+          <caret line="254" column="30" lean-forward="true" selection-start-line="254" selection-start-column="30" selection-end-line="254" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#deleteUser#0;class#EditUser#0" />
             <element signature="method#createUser#0;class#EditUser#0" />
-            <element signature="method#accessUser_input#0;class#EditUser#0" />
-            <element signature="method#updateUser#0;class#EditUser#0" />
+            <element signature="method#accessUser#0;class#EditUser#0" />
             <element signature="method#printAllUsers#0;class#EditUser#0" />
+            <element signature="method#setPassword#0;class#EditUser#0" />
             <element signature="method#setID#0;class#EditUser#0" />
             <element signature="method#setUsername#0;class#EditUser#0" />
             <element signature="method#setIni#0;class#EditUser#0" />
             <element signature="method#setCpr#0;class#EditUser#0" />
-            <element signature="method#setRole#0;class#EditUser#0" />
-            <element signature="method#isThisAnInt#0;class#EditUser#0" />
             <element signature="method#isThisAString#0;class#EditUser#0" />
           </folding>
         </state>

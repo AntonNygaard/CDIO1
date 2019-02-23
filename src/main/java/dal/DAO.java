@@ -22,6 +22,7 @@ public class DAO implements IUserDAO {
                 userdto.setIni(getUser.getString("ini"));
                 userdto.setCpr(getUser.getString("cpr"));
                 userdto.setPassword(getUser.getString("userPassword"));
+                userdto.setRole(getUser.getString("role"));
             }
         } catch (SQLException e) {
             //Remember to handle Exceptions gracefully! Connection might be Lost....
