@@ -1,5 +1,5 @@
 public class OfficerRequirement {
-    // Fundet online
+    // Fundet online -v
     public boolean isThisAnInt(String s) {
         try
         {
@@ -10,7 +10,7 @@ public class OfficerRequirement {
             return false;
         }
     }
-    // Fundet online
+    // Fundet online -v
     public boolean isThisAString(String name) {
         char[] chars = name.toCharArray();
 
@@ -30,7 +30,6 @@ public class OfficerRequirement {
             return false;
         }
     }
-
     public boolean passwordChecker(String newUserPassword) {
         char newUserPasswordCheck;
         boolean capitalCheck = false;
@@ -53,6 +52,8 @@ public class OfficerRequirement {
                         newUserPasswordCheck == '+' || + newUserPasswordCheck == '!' || newUserPasswordCheck == '?' || newUserPasswordCheck == '=') {
                     specialCharCheck = true;
                 }
+                if (newUserPasswordCheck == '\'' || newUserPasswordCheck == ')' || newUserPasswordCheck == ';' || newUserPasswordCheck == '(')
+                    return false;
             }
         }
         int requirementCheck = 0;

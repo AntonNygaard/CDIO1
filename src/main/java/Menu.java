@@ -3,10 +3,8 @@ import dal.IUserDAO;
 import dto.UserDTO;
 
 import java.util.List;
-import java.util.Scanner;
 
 public class Menu {
-    Scanner s = new Scanner(System.in);
     DAO dao = new DAO();
     ConsoleView view = new ConsoleView();
     OfficerRequirement requirement = new OfficerRequirement();
