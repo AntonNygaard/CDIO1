@@ -178,7 +178,7 @@ public class Menu {
 
     public UserDTO setID(UserDTO user) {
         while (true) {
-            String newUserID = view.getUserInput("Indtast ID mellem 11 og 99 til den nye bruger");
+            String newUserID = view.getUserInput("Indtast ID mellem 11 og 99:");
             if (requirement.IDChecker(newUserID)) {
                 user.setUserId(Integer.parseInt(newUserID));
                 return user;
