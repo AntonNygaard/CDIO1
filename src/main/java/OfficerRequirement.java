@@ -52,7 +52,8 @@ public class OfficerRequirement {
                         newUserPasswordCheck == '+' || + newUserPasswordCheck == '!' || newUserPasswordCheck == '?' || newUserPasswordCheck == '=') {
                     specialCharCheck = true;
                 }
-                if (newUserPasswordCheck == '\'' || newUserPasswordCheck == ')' || newUserPasswordCheck == ';' || newUserPasswordCheck == '(')
+                if (newUserPasswordCheck == '\'' || newUserPasswordCheck == ')' || newUserPasswordCheck == ';' || newUserPasswordCheck == '('
+                || newUserPasswordCheck == '}' || newUserPasswordCheck == '{')
                     return false;
             }
         }

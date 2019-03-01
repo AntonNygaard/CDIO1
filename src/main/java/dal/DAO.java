@@ -55,14 +55,8 @@ public class DAO implements IUserDAO {
                 + "user=s170429&password=4PPt5j8rsEIUnrBq8G0iE")) {
             Statement statement = connection.createStatement();
             statement.executeUpdate(createUserSQL);
-            System.out.println("------------------------------------------------\n" +
-                    "Bruger lavet\n" +
-                    "------------------------------------------------");
         } catch (SQLException e) {
             //Remember to handle Exceptions gracefully! Connection might be Lost...
-            System.out.println("------------------------------------------------\n" +
-                    "FEJL: UserID allerede taget\n" +
-                    "------------------------------------------------");
         }
     }
     @Override
